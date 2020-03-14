@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Spartan&display=swap');
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    font-family: 'Permanent Marker', cursive;
+    min-width: 315px;
+    min-height: 205px;;
+
+}
+.header {
+    height: 25vh;
+    max-height: 100px;
+    background-color: steelblue;
+    color: rgba(255, 183, 15);
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3 1 400px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+
+}
+.buttonGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1 2 220px ;
+}
+#save, #clear, .subButton {
+   border: 1px solid #ffffff;
+   background-color: whitesmoke;
+   padding: 10px;
+   margin: 0 15px;
+   border-radius: 5%;
+   font-family: 'Spartan', sans-serif;
+   font-weight: 900;
+}
+form {
+    flex: 1 1 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form > * {
+    margin: 0 15px;;
+}
+.subButton {
+    border: 1px solid black;
+}
+
+#inputVal {
+    border: 1px solid black;
+    height: 20px;
+    width: 200px;
+}
+.delete {
+    border: 1px solid black;
+    padding:0 10px;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 5%;
+    font-family: 'Spartan', sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+li > * {
+    margin: 10px;
+}
+input[type="checkbox"]{
+    cursor: pointer;
+}
+.theList {
+    min-width: 300px;
+}
+.completed {
+    text-decoration: line-through;
+}
